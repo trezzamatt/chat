@@ -1,11 +1,7 @@
-from tokenize import String
-from xml.dom.minidom import Document
-from flask import Flask, redirect, render_template, request, url_for, session, jsonify
+from flask import Flask, redirect, render_template, request, url_for, session
 from flask_sqlalchemy import SQLAlchemy
 import os
 from dataclasses import dataclass
-
-from sqlalchemy import null
 
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///app.db'
